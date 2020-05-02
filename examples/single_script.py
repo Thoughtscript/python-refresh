@@ -23,4 +23,5 @@ if __name__ == '__main__':
         print(sim_result.get_counts(qc))
 
     except QISKitError as ex:
+        
         print('Quantum fluctuations! Eh Gad!'.format(ex))
