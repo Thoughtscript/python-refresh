@@ -4,13 +4,12 @@ Python (language) notes.
 
 ## Contents
 
-[Python 3.6.x](https://www.python.org/downloads/release/python-365/) examples.
+[Python 3.8.2](https://www.python.org/downloads/) examples.
 
 ## Use
 
-Really simple [Python 3.6.x](https://www.python.org/downloads/release/python-365/) quantum programming demonstration using the great [QISKit](https://github.com/QISKit/qiskit-sdk-py):
+To install dependencies into a [Python 3.8.2](https://www.python.org/downloads/) **virtual environmen** (venv):
 
-To install dependencies into a Python `virtual environment`:
 ```bash
     $ python -m pip install --upgrade pip
     $ python -m venv ENV_QUANTUM
@@ -18,6 +17,7 @@ To install dependencies into a Python `virtual environment`:
 ```
 
 Then, after activating the selected environment:
+
 ```bash
    $ python -m pip install -r requirements.txt
 ```
