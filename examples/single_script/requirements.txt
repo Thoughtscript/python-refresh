@@ -1,2 +1,2 @@
 # Quantum Information Software Kit
-qiskit
+qiskit==0.19.1
