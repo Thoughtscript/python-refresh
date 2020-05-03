@@ -10,6 +10,7 @@ A few examples covering:
 1. OOD
 1. some destructuring
 1. dependency injection
+1. lambda functions
 
 ## Use
 
