@@ -1,10 +1,15 @@
 # python-refresh
 
-[Python 3.8.2](https://www.python.org/downloads/) (language, not [Django](https://github.com/Thoughtscript/python_django_refresh)) refresh and review notes.
+[Python 3.8.2](https://www.python.org/downloads/) (the language, not [Django](https://github.com/Thoughtscript/python_django_refresh)) refresh and review notes.
 
 ## Contents
 
-[Python 3.8.2](https://www.python.org/downloads/) examples. They go through quite a few examples covering dicts, OOD, etc. 
+A few examples covering:
+
+1. dicts
+1. OOD
+1. some destructuring
+1. dependency injection
 
 ## Use
 
