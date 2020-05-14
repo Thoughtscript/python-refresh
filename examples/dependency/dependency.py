@@ -1,4 +1,4 @@
-# dependency example (for injection into main.py)
+# dependency example (for injection into example_one.py)
 ## note that filenames don't have to align with classes (this is less clear in Django)
 
 class Dog:

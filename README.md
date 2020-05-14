@@ -12,6 +12,8 @@ A few examples covering:
 1. dependency injection
 1. lambda functions
 
+> **Note:** also includes Coursera notes.
+
 ## Use
 
 To install dependencies into a [Python 3.8.2](https://www.python.org/downloads/) **virtual environmen** (venv):
