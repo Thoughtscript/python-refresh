@@ -2,6 +2,8 @@
 
 [Python 3.8.2](https://www.python.org/downloads/) (the language, not [Django](https://github.com/Thoughtscript/python_django_refresh)) refresh and review notes.
 
+> **DO NOT:** use these files unethically (to plagiarise, etc. in tests). However, feel free to use them for your own review.
+
 ## Contents
 
 A few examples covering:
