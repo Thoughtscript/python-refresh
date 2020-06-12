@@ -11,4 +11,4 @@ if __name__ == '__main__':
 
     except Exception as ex:
 
-        print('Exception!'.format(ex))
+        print('Exception! ' + str(ex))

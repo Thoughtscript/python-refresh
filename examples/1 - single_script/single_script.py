@@ -36,4 +36,4 @@ if __name__ == '__main__':
 
     except Exception as ex:
         
-        print('Quantum fluctuations! Eh Gad!'.format(ex))
+        print('Quantum fluctuations! Eh Gad! ' + str(ex))
