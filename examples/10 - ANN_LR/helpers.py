@@ -1,13 +1,9 @@
 import numpy as np
-import math
 
 
 def initialize_parameters(X, Y, H):
-
     params = {"W1": None, "b1": None, "W2": None, "b2": None}
-
     try:
-
         n_x = X.shape[0]
         n_y = Y.shape[0]
 
@@ -25,14 +21,12 @@ def initialize_parameters(X, Y, H):
 
 
 def sigmoid(x):
-    return 1 / (1 + math.exp(-x))
+    return 1/(1+np.exp(-x))
 
 
 def forward_propagation(X, params):
     cache = {"Z1": 0, "A1": 0, "Z2": 0, "A2": 0}
-
     try:
-
         cache["Z1"] = np.dot(params["W1"], X) + params["b1"]
         cache["A1"] = np.tanh(cache["Z1"])
         cache["Z2"] = np.dot(params["W2"], cache["A1"]) + params["b2"]
@@ -46,7 +40,6 @@ def forward_propagation(X, params):
 
 def compute_cost(A2, Y):
     cost = 0
-
     try:
         m = Y.shape[1]
         logprobs = np.multiply(Y, np.log(A2)) + np.multiply((1 - Y), np.log(1 - A2))
@@ -81,7 +74,6 @@ def backward_propagation(params, cache, X, Y):
 def update_parameters(params, grads, learning_rate=1.2):
     parameters = {"W1": 0, "b1": 0, "W2": 0, "b2": 0}
     try:
-
         parameters["W1"] = params["W1"] - learning_rate * grads["dW1"]
         parameters["b1"] = params["b1"] - learning_rate * grads["db1"]
         parameters["W2"] = params["W2"] - learning_rate * grads["dW2"]
@@ -91,3 +83,7 @@ def update_parameters(params, grads, learning_rate=1.2):
         print('Exception update_parameters! ' + str(ex))
 
     return parameters
+
+def predict(A2):
+    predictions = A2 > .5
+    return predictions
