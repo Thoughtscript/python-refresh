@@ -2,6 +2,7 @@
 
 ## note that depending on env setup, some dependencies will appear as errors (this is true of Django as well)
 import dependency
+import dependencies.a as A
 
 if __name__ == '__main__':
 
@@ -55,6 +56,10 @@ if __name__ == '__main__':
         # dependency injection example
         robo = dependency.RoboCat("cat one", "Egyptian", "chrome")
         print(robo.meow("10101010011"))
+
+        # a second dependency injection example
+        B = A.B
+        print("A.B " + str(B.num))
 
     except Exception as ex:
 

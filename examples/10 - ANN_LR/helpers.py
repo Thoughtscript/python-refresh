@@ -84,6 +84,7 @@ def update_parameters(params, grads, learning_rate=1.2):
 
     return parameters
 
+
 def predict(A2):
     predictions = A2 > .5
     return predictions
