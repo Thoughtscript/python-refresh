@@ -41,8 +41,8 @@ def initialize_parameters(LAYERS):
     return params
 
 # higher is both required to find the model
-# higher will find in quicker - 2 finds in 5 iteration
-# if it's 4,5 it's not granular enough
+# and to find it more quickly - LR 2 finds in 5 iterations (compared with 31 in single layer)
+# if it's 4,5 it's not granular enough and will fail to generate a solution
 def update_parameters(params, grads, learning_rate = 3):
     L = len(params) // 2
     try:
